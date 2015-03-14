@@ -31,8 +31,8 @@ void draw() {
   
   scale(4);
   shape(s, 0, 0);
-  beginCamera();
-  camera();
+  beginCamera(); //add camera matrix to matrix stack
+  camera();      //reinitialize camera
   rotateY(frameCount*PI/180);
   endCamera();
   //if(frameCount % 90 == 0) 
