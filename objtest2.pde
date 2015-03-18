@@ -10,6 +10,13 @@ size(320, 569, P3D);
   
   
   
+  for(int i = 0; i < s.getChildCount(); i++){
+ for(int j = 0; j < s.getChild(i).getVertexCount(); j ++){
+ println(s.getChild(i).getVertex(j));
+ }
+ }
+  
+ 
 }
 
 void draw() {
@@ -23,14 +30,17 @@ void draw() {
     noStroke();
     fill(150, 195, 125);
   }
-  translate(width/2, height);
+  
+  ;
   //rotateX(frameCount*PI/150);
+  translate(width/2,height/2);
   rotateZ(PI);
+   scale(4);
   
-  //rotateY(frameCount*PI/170);
+  shapeMode(CENTER);
   
-  scale(4);
-  shape(s, 0, 0);
+
+  shape(s, s.width, 0);
   beginCamera();
   camera();
   rotateY(frameCount*PI/180);
