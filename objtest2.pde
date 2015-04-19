@@ -7,7 +7,7 @@ PImage temp [] = new PImage[numOfSilces];
 int OUR_WIDTH = 128;
 int OUR_HEIGHT = 228;
 float objScale = 15;
-String objName = "VMask.obj";
+String objName = "utah-teapot.obj";
 
 void setup() {
 buffer = createGraphics((numOfSilces+2)*OUR_WIDTH, OUR_HEIGHT, JAVA2D);
